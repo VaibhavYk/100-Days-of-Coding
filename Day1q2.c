@@ -14,12 +14,20 @@ int main()
     S = x + y;
     D = x - y;
     P = x * y;
-    Q = x % y;
+    
+    if(y==0){
+    printf("Division is undefined\n");
+    }
+    else{
+    Q=x/y;
+    printf("Quotient of the numbers: %d\n", Q);
+    }
+
 
     printf("Sum of the numbers: %d\n", S);
     printf("Difference of the numbers: %d\n", D);
     printf("Products of the numbers: %d\n", P);
-    printf("Quotient of the numbers: %d\n", Q);
+    
     
     return 0;
 }
