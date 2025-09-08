@@ -11,8 +11,9 @@ int main()
     min= (s%3600)/60;
     s= s%60;
 
-    printf("Time in hours:minutes:seconds format:%d:%d;%d\n", hr, min, s);
+    printf("Time in hours:minutes:seconds format:%d;%d;%d\n", hr, min, s);
 
     return 0;
     
+
 }
